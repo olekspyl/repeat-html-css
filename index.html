@@ -4,16 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>WebStudio</title>
   </head>
   <body>
     <!-- HEADER -->
     <header class="header">
       <nav class="nav-header">
-        <a href="#" lang="en"><span>Web</span>Studio</a>
+        <a href="/" lang="en" class="logo">
+          <span class="logo-blue">Web</span
+          ><span class="logo-black">Studio</span>
+        </a>
         <ul class="header-list">
-          <li class="header-list-item"><a href="#">Студія</a></li>
-          <li class="header-list-item"><a href="#">Портфоліо</a></li>
+          <li class="header-list-item"><a href="">Студія</a></li>
+          <li class="header-list-item">
+            <a href="./portfolio.html">Портфоліо</a>
+          </li>
           <li class="header-list-item"><a href="#contacts">Контакти</a></li>
         </ul>
       </nav>
@@ -32,36 +44,36 @@
     <main>
       <!-- HERO-SECTION -->
       <section class="hero">
-        <h1>Ефективні рішення для вашого бізнесу</h1>
-        <button type="button">Замовити послугу</button>
+        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+        <button class="button hero-btn" type="button">Замовити послугу</button>
       </section>
       <!-- FEATURES -SECTION -->
-      <h2 hidden>Features</h2>
       <section class="our-work-section">
+        <h2 hidden>Features</h2>
         <ul class="advantages-list">
           <li class="advantages-list-item">
-            <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p>
+            <h3 class="features-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+            <p class="features-desc">
               Ідейні міркування, і навіть початок повсякденної роботи з
               формування позиції.
             </p>
           </li>
           <li class="advantages-list-item">
-            <h3>ПУНКТУАЛЬНІСТЬ</h3>
-            <p>
+            <h3 class="features-title">ПУНКТУАЛЬНІСТЬ</h3>
+            <p class="features-desc">
               Завдання організації, особливо рамки і місце навчання кадрів тягне
               у себе.
             </p>
           </li>
           <li class="advantages-list-item">
-            <h3>ПЛАНУВАННЯ</h3>
-            <p>
+            <h3 class="features-title">ПЛАНУВАННЯ</h3>
+            <p class="features-desc">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
           <li class="advantages-list-item">
-            <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p>
+            <h3 class="features-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+            <p class="features-desc">
               Значимість цих проблем настільки очевидна, що реалізація планових
               завдань.
             </p>
@@ -69,56 +81,97 @@
         </ul>
       </section>
       <!-- WHAT-WE-ARE-DOING -->
-      <section>
-        <h2>Чим ми займаємося</h2>
+      <section class="our-work">
+        <h2 class="h2-title our-work-title">Чим ми займаємося</h2>
         <ul>
-          <li><img src="./images/box1.jpg" alt="box1" width="200" /></li>
-          <li><img src="./images/box2.jpg" alt="box2" width="200" /></li>
-          <li><img src="./images/box3.jpg" alt="box3" width="200" /></li>
+          <li>
+            <img
+              src="./images/index/what-we-are-doing/box1.jpg"
+              alt="box1"
+              width="370"
+              height="294"
+            />
+          </li>
+          <li>
+            <img
+              src="./images/index/what-we-are-doing/box2.jpg"
+              alt="box2"
+              width="370"
+              height="294"
+            />
+          </li>
+          <li>
+            <img
+              src="./images/index/what-we-are-doing/box3.jpg"
+              alt="box3"
+              width="370"
+              height="294"
+            />
+          </li>
         </ul>
       </section>
       <!-- TEAM-SECTION -->
       <section class="team-section">
-        <h2>Наша команда</h2>
+        <h2 class="h2-title">Наша команда</h2>
         <ul class="team-section-list">
           <li class="team-section-list-item">
-            <img src="./images/img.jpg" alt="img" width="200" />
-            <h3>Ігор Дем'яненко</h3>
-            <p>Product Designer</p>
+            <img
+              src="./images/index/team/img.jpg"
+              alt="img"
+              width="270"
+              height="260"
+            />
+            <h3 class="team-person-name">Ігор Дем'яненко</h3>
+            <p class="team-person-position">Product Designer</p>
           </li>
           <li class="team-section-list-item">
-            <img src="./images/img1.jpg" alt="img" width="200" />
-            <h3>Ольга Рєпіна</h3>
-            <p>Frontend Developer</p>
+            <img
+              src="./images/index/team/img1.jpg"
+              alt="img"
+              width="270"
+              height="260"
+            />
+            <h3 class="team-person-name">Ольга Рєпіна</h3>
+            <p class="team-person-position">Frontend Developer</p>
           </li>
           <li class="team-section-list-item">
-            <img src="./images/img2.jpg" alt="img" width="200" />
-            <h3>Микола Тарасов</h3>
-            <p>Marketing</p>
+            <img
+              src="./images/index/team/img2.jpg"
+              alt="img"
+              width="270"
+              height="260"
+            />
+            <h3 class="team-person-name">Микола Тарасов</h3>
+            <p class="team-person-position">Marketing</p>
           </li>
           <li class="team-section-list-item">
-            <img src="./images/img3.jpg" alt="img" width="200" />
-            <h3>Михайло Єрмаков</h3>
-            <p>UI Designer</p>
+            <img
+              src="./images/index/team/img3.jpg"
+              alt="img"
+              width="270"
+              height="260"
+            />
+            <h3 class="team-person-name">Михайло Єрмаков</h3>
+            <p class="team-person-position">UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
     <!-- FOOTER-SECTION -->
     <footer class="footer">
-      <a class="link" href="/" lang="en">WebStudio</a>
-      <address id="contacts">
+      <a href="/" lang="en" class="logo">
+        <span class="logo-blue">Web</span><span class="logo-white">Studio</span>
+      </a>
+      <address class="address-footer" id="contacts">
         <ul>
-          <li class="list address">г. Киев, пр-т Леси Украинки, 26</li>
-          <li class="list">
-            <a class="link mail-tel" href="mailto:info@example.com"
+          <li class="list-address">м. Київ, пр-т Лесі Українки, 26</li>
+          <li class="footer-list-contacts">
+            <a class="mail-tel" href="mailto:info@example.com"
               >info@example.com</a
             >
           </li>
-          <li class="list">
-            <a class="link mail-tel" href="tel:+380991111111"
-              >+38 099 111 11 11</a
-            >
+          <li class="footer-list-contacts">
+            <a class="mail-tel" href="tel:+380991111111">+38 099 111 11 11</a>
           </li>
         </ul>
       </address>
