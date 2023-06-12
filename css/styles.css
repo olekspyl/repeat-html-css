@@ -8,6 +8,12 @@
     --background-color-grey: #F5F4FA;
     --background-color-black: #2F303A;
     --icon-grey-color: #AFB1B8;
+
+    --color-transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    --border-color-transition: border-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    --fill-transition: fill 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    --background-color-transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    --shadow-color-transition: box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .visually-hidden {
@@ -80,6 +86,16 @@ ul {
 
 /* HEADER */
 .header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--background-color-light);
+    z-index: 1;
+    border-bottom: 1px solid #ECECEC;;
+}
+
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -112,10 +128,15 @@ align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    padding: 32px 0;
 }
 
-.header-list-item:hover, .header-list-item:focus {
+.header-list-link {
+    padding: 32px 0;
+    display: block;
+    transition: var(--color-transition);
+}
+
+.header-list-link:hover, .header-list-link:focus {
     color: var(--brand-color-blue);
 }
 
@@ -127,8 +148,15 @@ align-items: center;
     margin-right: 10px;
 }
 
-.header-list-item-portfolio, .header-list-item-studio {
+.active-item {
     color: var(--brand-color-blue);
+}
+
+.active-item::after {
+    content: "";
+    display: block;
+    border-bottom: 4px solid var(--brand-color-blue);
+    width: 100%;    
 }
 
 .header-contacts {
@@ -147,7 +175,12 @@ align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    
+}
+
+.header-contacts-link {
     padding: 32px 0;
+    transition: var(--color-transition);
 }
 
 .header-contacts-link:hover, .header-contacts-link:focus {
@@ -158,17 +191,18 @@ align-items: center;
 margin-right: 40px;
 }
 
+.header-icons {
+    transition: var(--fill-transition);
+    fill: var(--text-color-grey);
+        margin-right: 10px;
+}
+
 .header-contacts-link:hover .header-icons {
     fill: var(--brand-color-blue);
 }
 
 .header-contacts-link:focus .header-icons {
     fill: var(--brand-color-blue);
-}
-
-.header-icons {
-    fill: var(--text-color-grey);
-    margin-right: 10px;
 }
 
 /* HERO */
@@ -180,6 +214,7 @@ margin-right: 40px;
     background-color: var(--background-color-black);
     max-width: 1600px;
     margin: 0 auto;
+    padding-top: 80px;
 }
 
 .hero {
@@ -298,6 +333,7 @@ margin-right: 40px;
 }
 
 .team-socmedia-icon {
+    transition: var(--fill-transition);
     fill: var(--icon-grey-color);
 }
 
@@ -323,10 +359,16 @@ margin-right: 40px;
     align-items: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    transition: var(--border-color-transition);
 }
 
 .clients-link:hover {
     border-color: var(--brand-color-blue);
+}
+
+.client-icon {
+    transition: var(--fill-transition);
+    fill: var(--icon-grey-color);
 }
 
 .clients-link:hover .client-icon {
@@ -337,9 +379,7 @@ margin-right: 40px;
     fill: var(--brand-color-blue);
 }
 
-.client-icon {
-    fill: var(--icon-grey-color);
-}
+
 
 /* FOOTER */
 .footer {
@@ -405,6 +445,7 @@ margin-right: 40px;
     height: 44px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
+    transition: var(--background-color-transition);
 }
 
 .socmedia-icon {
@@ -436,6 +477,7 @@ margin-right: 40px;
     line-height: 1.62;
     text-align: center;
     padding: 6px 22px;
+    transition: var(--color-transition), var(--background-color-transition);
 }
 
 .portfolio-btn:not(:last-child) {
@@ -477,4 +519,48 @@ margin-right: 40px;
 .card-desk {
     color: var(--text-color-grey);
     line-height: 1.88;
+}
+
+/* MODAL */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.modal {
+    position: relative;
+    background-color: var(--background-color-light);
+    width: 528px;
+    height: 581px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.close-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    top: 8px;
+    right: 8px;
+    background-color: var(--background-color-light);
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.backdrop .visually-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
 }
