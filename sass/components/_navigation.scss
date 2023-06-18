@@ -1,0 +1,11 @@
+.navigation {
+    @extend %container;
+    border-top: 1px solid #ECECEC;
+    padding-top: 174px; 
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 50px;
+    };
+};

@@ -1,0 +1,11 @@
+@keyframes fade-in {
+    from {
+        opasity: 0;
+        transform: translateX(-200px) scale(0.2);
+    }
+
+    to {
+        opasity: 1;
+        transform: translateX(0) scale(1);
+    }
+}

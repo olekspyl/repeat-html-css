@@ -1,0 +1,28 @@
+.hero {
+    background-image: linear-gradient(rgba(47, 48, 58, .4), rgba(47, 48, 58, .4)), url(../images/index/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: getColor('background-color-black');
+    max-width: 1600px;
+    margin: 0 auto;
+    margin-top: 83px;
+
+    &__container {
+        padding: 200px 0;
+    };
+
+    &__title {
+        color: getColor('text-color-white');
+        font-weight: 900;
+        font-size: 44px;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        line-height: 1.36;
+        width: 696px;
+        height: 120px;
+        margin: 0 auto 30px auto;
+        animation: fade-in 2000ms ease 100ms 1 both;
+    };
+};

@@ -1,0 +1,39 @@
+// utils style
+@import './utils/colors-map';
+@import './utils/transitions-map';
+@import './utils/mixins';
+@import './utils/visually-hidden';
+@import './utils/animations';
+
+// base styles
+@import './base/base';
+@import './base/reset';
+
+// components style index
+@import './components/section';
+@import './components/container';
+@import './components/button';
+@import './components/logo';
+@import './components/titles';
+@import './components/nav-list';
+@import './components/contacts';
+@import './components/socmedia-list';
+@import './components/close-btn';
+@import './components/address';
+@import './components/modal';
+@import './components/form';
+@import './components/license';
+// components style portfolio
+@import './components/navigation';
+
+
+// layouts style index
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/advantages';
+@import './layouts/work';
+@import './layouts/team';
+@import './layouts/clients';
+@import './layouts/footer';
+// Layout style portfolio
+@import './layouts/cards';

@@ -1,0 +1,34 @@
+.nav-list {
+    display: flex; 
+};
+
+.nav-list__item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+
+    &:not(:last-child) {
+        margin-right: 50px;
+    };
+};
+
+.nav-list--active-item {
+    color: getColor('brand-color-blue'); 
+
+    &::after {
+        content: "";
+        display: block;
+        border-bottom: 4px solid getColor('brand-color-blue');
+        width: 100%;
+    };
+};
+
+.nav-list__link {
+    padding: 32px 0;
+    display: block;
+    transition: getTransition('color-transition');
+
+    &:hover, &:focus {
+        color: getColor('brand-color-blue');
+    };
+};

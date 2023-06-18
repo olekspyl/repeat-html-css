@@ -1,0 +1,14 @@
+.work {
+    &__container{
+        @extend %container;
+    };
+
+    &__section {
+        padding-bottom: 94px;
+    };
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    };   
+};

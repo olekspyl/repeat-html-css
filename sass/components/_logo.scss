@@ -1,0 +1,34 @@
+%logo-base {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.logo {
+
+    &__header {
+        @extend %logo-base;
+        padding-top: 24px;
+        padding-bottom: 25px;
+        margin-right: 93px;
+    };
+
+    &__footer {
+        @extend %logo-base;
+        display: flex;
+        margin-bottom: 28px;
+    };
+
+    &--blue {
+        color: getColor('brand-color-blue');
+    };
+
+    &--black {
+        color: getColor('logo-color-black');
+    };
+
+    &--white {
+        color: getColor('text-color-white');
+    };
+};

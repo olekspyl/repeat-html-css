@@ -1,0 +1,40 @@
+.socmedia-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.socmedia-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: getTransition('background-color-transition');
+
+    &:hover, &:focus {
+        background-color: getColor('brand-color-blue');
+    }; 
+};
+
+.socmedia-list__icon {
+    &--white {
+        fill: getColor('text-color-white');
+    };
+
+    &--grey {
+        transition: getTransition('fill-transition');
+        fill: getColor('icon-grey-color');
+    };
+};
+
+.socmedia-list__link:hover .socmedia-list__icon--grey {
+    fill: getColor('text-color-white');
+};
+
+.socmedia-list__link:focus .socmedia-list__icon--grey {
+    fill: getColor('text-color-white');
+};
