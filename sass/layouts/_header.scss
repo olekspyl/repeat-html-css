@@ -1,0 +1,21 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: getColor('background-color-light');
+    z-index: 1;
+    border-bottom: 1px solid #ECECEC;
+
+    &__container {
+        @extend %container;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    };
+
+    &__nav {
+        display: flex;
+        align-items: center;
+    };
+};

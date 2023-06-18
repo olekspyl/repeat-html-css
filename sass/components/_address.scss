@@ -1,0 +1,10 @@
+.address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+
+    &__item {
+        color: getColor('text-color-white');
+        margin-bottom: 12px;
+        };
+};

@@ -14,16 +14,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
     <title>WebStudio</title>
   </head>
   <body>
     <!-- HEADER -->
     <header class="header">
-      <div class="container header__container">
-        <nav class="header__nav nav">
-          <a href="/" lang="en" class="logo logo__header-logo">
+      <div class="header__container">
+        <nav class="header__nav">
+          <a href="/" lang="en" class="logo__header">
             <span class="logo--blue">Web</span
             ><span class="logo--black">Studio</span>
           </a>
@@ -70,15 +70,15 @@
       <!-- HERO-SECTION -->
       <section class="hero">
         <div class="hero__container">
-          <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="button main-btn" type="button" data-modal-open>
+          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+          <button class="main-btn" type="button" data-modal-open>
             Замовити послугу
           </button>
         </div>
       </section>
       <!-- ADVANTAGES-SECTION -->
-      <section class="section">
-        <div class="container advantages">
+      <section class="advantages__section">
+        <div class="advantages__container">
           <h2 class="visually-hidden">Features</h2>
           <ul class="advantages__list">
             <li class="advantages__item">
@@ -134,8 +134,8 @@
         </div>
       </section>
       <!-- WHAT-WE-ARE-DOING -->
-      <section class="section-work">
-        <div class="container work">
+      <section class="work__section">
+        <div class="work__container">
           <h2 class="h2-title">Чим ми займаємося</h2>
           <ul class="work__list">
             <li>
@@ -166,8 +166,8 @@
         </div>
       </section>
       <!-- TEAM-SECTION -->
-      <section class="section team__section">
-        <div class="container">
+      <section class="team__section">
+        <div class="team__container">
           <h2 class="h2-title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
@@ -526,8 +526,8 @@
         </div>
       </section>
       <!-- CLIENTS-SECTION -->
-      <section class="section">
-        <div class="container clients">
+      <section class="clients__section">
+        <div class="clients__container">
           <h2 class="h2-title">Постійні клієнти</h2>
           <ul class="clients__list">
             <li class="clients__item">
@@ -578,9 +578,9 @@
     </main>
     <!-- FOOTER-SECTION -->
     <footer class="footer__section">
-      <div class="container footer">
+      <div class="footer__container">
         <div class="footer__info">
-          <a class="logo footer__logo" href="/" lang="en">
+          <a class="logo__footer" href="/" lang="en">
             <span class="logo--blue">Web</span
             ><span class="logo--white">Studio</span>
           </a>
@@ -707,7 +707,7 @@
               <a class="license__link" href="/">Умови договору</a>
             </span>
           </label>
-          <button class="button main-btn" type="submit">Відправити</button>
+          <button class="main-btn" type="submit">Відправити</button>
         </form>
       </div>
     </div>

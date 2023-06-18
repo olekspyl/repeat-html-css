@@ -1,0 +1,24 @@
+.footer {
+    &__section {
+        background-color: getColor('background-color-black');
+        padding: 60px 0;
+    };
+
+    &__container {
+        @extend %container;
+        display: flex;
+    };
+
+    &__socmedia {
+        margin-left: 94px;
+    };
+
+    &__h3-title {
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: getColor('text-color-white');
+        margin-bottom: 20px;
+    };
+};

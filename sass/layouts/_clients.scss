@@ -1,0 +1,42 @@
+.clients {
+    &__container {
+        @extend %container;
+    };
+
+    &__section {
+        @extend %section;
+    };
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__icon {
+        transition: getTransition('fill-transition');
+        fill: getColor('icon-grey-color');
+    }
+};
+
+.clients__link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    transition: getTransition('border-color-transition');
+
+    &:hover {
+        border-color: getColor('brand-color-blue');
+    };
+};
+
+.clients__link:hover .clients__icon {
+    fill: getColor('brand-color-blue');
+};
+
+.clients__link:focus .client__icon {
+    fill: getColor('brand-color-blue');
+};

@@ -1,0 +1,15 @@
+$colors: (
+    'brand-color-blue': #2196F3,
+    'logo-color-black': #000000,
+    'text-color-grey': #757575,
+    'text-color-black': #212121,
+    'text-color-white': #FFFFFF,
+    'background-color-light': #FFFFFF,
+    'background-color-grey': #F5F4FA,
+    'background-color-black': #2F303A,
+    'icon-grey-color': #AFB1B8,
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+};
