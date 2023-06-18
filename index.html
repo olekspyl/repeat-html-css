@@ -14,35 +14,36 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
+
     <link rel="stylesheet" href="./css/styles.css" />
     <title>WebStudio</title>
   </head>
   <body>
     <!-- HEADER -->
-    <header>
-      <div class="container header">
-        <nav class="nav-header">
-          <a href="/" lang="en" class="logo upper-logo">
-            <span class="logo-blue">Web</span
-            ><span class="logo-black">Studio</span>
+    <header class="header">
+      <div class="container header__container">
+        <nav class="header__nav nav">
+          <a href="/" lang="en" class="logo logo__header-logo">
+            <span class="logo--blue">Web</span
+            ><span class="logo--black">Studio</span>
           </a>
-          <ul class="header-list">
-            <li class="header-list-item header-list-item-studio">
-              <a href="">Студія</a>
+          <ul class="nav-list">
+            <li class="nav-list__item nav-list--active-item">
+              <a class="nav-list__link" href="">Студія</a>
             </li>
-            <li class="header-list-item">
-              <a href="./portfolio.html">Портфоліо</a>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li class="header-list-item">
-              <a href="#contacts">Контакти</a>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="#contacts">Контакти</a>
             </li>
           </ul>
         </nav>
-        <div class="header-contacts">
-          <ul class="header-contacts-list">
-            <li class="header-contacts-list-item">
-              <a class="header-contacts-link" href="mailto:info@devstudio.com">
-                <svg class="header-icons" width="16" height="12">
+        <div class="contacts">
+          <ul class="contacts__list">
+            <li class="contacts__item--rgb">
+              <a class="contacts__link" href="mailto:info@devstudio.com">
+                <svg class="contacts__icon" width="16" height="12">
                   <use
                     href="./images/icons/symbol-defs.svg#icon-envelope"
                   ></use>
@@ -50,9 +51,9 @@
                 info@devstudio.com
               </a>
             </li>
-            <li class="header-contacts-list-item">
-              <a class="header-contacts-link" href="tel:+380961111111">
-                <svg class="header-icons" width="10" height="16">
+            <li class="contacts__item--rgb">
+              <a class="contacts__link" href="tel:+380961111111">
+                <svg class="contacts__icon" width="10" height="16">
                   <use
                     href="./images/icons/symbol-defs.svg#icon-smartphone"
                   ></use>
@@ -67,64 +68,64 @@
     <!-- MAIN -->
     <main>
       <!-- HERO-SECTION -->
-      <section class="hero-section">
-        <div class="hero">
-          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="button hero-btn" type="button">
+      <section class="hero">
+        <div class="hero__container">
+          <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
+          <button class="button main-btn" type="button" data-modal-open>
             Замовити послугу
           </button>
         </div>
       </section>
-      <!-- FEATURES -SECTION -->
+      <!-- ADVANTAGES-SECTION -->
       <section class="section">
-        <div class="container features-section">
-          <h2 hidden>Features</h2>
-          <ul class="advantages-list">
-            <li class="advantages-list-item">
-              <div class="features-svg-container">
+        <div class="container advantages">
+          <h2 class="visually-hidden">Features</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <div class="advantages__icon">
                 <svg width="70" height="70">
                   <use href="./images/icons/symbol-defs.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="features-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="features-desc">
+              <h3 class="h3-title advantages__h3-title">Увага до деталей</h3>
+              <p class="advantages__desc">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-            <li class="advantages-list-item">
-              <div class="features-svg-container">
+            <li class="advantages__item">
+              <div class="advantages__icon">
                 <svg width="70" height="70">
                   <use href="./images/icons/symbol-defs.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="features-title">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="features-desc">
+              <h3 class="h3-title advantages__h3-title">Пунктуальність</h3>
+              <p class="advantages__desc">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li class="advantages-list-item">
-              <div class="features-svg-container">
+            <li class="advantages__item">
+              <div class="advantages__icon">
                 <svg width="70" height="70">
                   <use href="./images/icons/symbol-defs.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="features-title">ПЛАНУВАННЯ</h3>
-              <p class="features-desc">
+              <h3 class="h3-title advantages__h3-title">Планування</h3>
+              <p class="advantages__desc">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="advantages-list-item">
-              <div class="features-svg-container">
+            <li class="advantages__item">
+              <div class="advantages__icon">
                 <svg width="70" height="70">
                   <use
                     href="./images/icons/symbol-defs.svg#icon-astronaut"
                   ></use>
                 </svg>
               </div>
-              <h3 class="features-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p class="features-desc">
+              <h3 class="h3-title advantages__h3-title">Сучасні технології</h3>
+              <p class="advantages__desc">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
               </p>
@@ -133,11 +134,11 @@
         </div>
       </section>
       <!-- WHAT-WE-ARE-DOING -->
-      <section>
-        <div class="container our-work">
-          <h2 class="h2-title our-work-title">Чим ми займаємося</h2>
-          <ul class="our-work-list">
-            <li class="our-work-list-item">
+      <section class="section-work">
+        <div class="container work">
+          <h2 class="h2-title">Чим ми займаємося</h2>
+          <ul class="work__list">
+            <li>
               <img
                 src="./images/index/what-we-are-doing/box1.jpg"
                 alt="box1"
@@ -165,74 +166,90 @@
         </div>
       </section>
       <!-- TEAM-SECTION -->
-      <section>
-        <div class="section team-section">
+      <section class="section team__section">
+        <div class="container">
           <h2 class="h2-title">Наша команда</h2>
-          <ul class="team-section-list">
-            <li class="team-section-list-item">
+          <ul class="team__list">
+            <li class="team__item">
               <img
                 src="./images/index/team/img.jpg"
                 alt="img"
                 width="270"
                 height="260"
               />
-              <h3 class="team-person-name">Ігор Дем'яненко</h3>
-              <p class="team-person-position">Product Designer</p>
-              <ul class="socmedia-list team-socmedia-list">
-                <li class="socmedia-item">
+              <h3 class="team__name">Ігор Дем'яненко</h3>
+              <p class="team__position">Product Designer</p>
+              <ul class="socmedia-list team__socmedia-list">
+                <li class="socmedia-list__item">
                   <a
-                    class="socmedia-link"
+                    class="socmedia-list__link"
                     href="/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="instagram"
                   >
-                    <svg class="team-socmedia-icon" width="20" height="20">
+                    <svg
+                      class="socmedia-list__icon--grey"
+                      width="20"
+                      height="20"
+                    >
                       <use
                         href="./images/icons/symbol-defs.svg#icon-instagram"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="socmedia-item">
+                <li class="socmedia-list__item">
                   <a
-                    class="socmedia-link"
+                    class="socmedia-list__link"
                     href="/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="twitter"
                   >
-                    <svg class="team-socmedia-icon" width="20" height="20">
+                    <svg
+                      class="socmedia-list__icon--grey"
+                      width="20"
+                      height="20"
+                    >
                       <use
                         href="./images/icons/symbol-defs.svg#icon-twitter"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="socmedia-item">
+                <li class="socmedia-list__item">
                   <a
-                    class="socmedia-link"
+                    class="socmedia-list__link"
                     href="/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="facebook"
                   >
-                    <svg class="team-socmedia-icon" width="20" height="20">
+                    <svg
+                      class="socmedia-list__icon--grey"
+                      width="20"
+                      height="20"
+                    >
                       <use
                         href="./images/icons/symbol-defs.svg#icon-facebook"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="socmedia-item">
+                <li class="socmedia-list__item">
                   <a
-                    class="socmedia-link"
+                    class="socmedia-list__link"
                     href="/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="linkedin"
                   >
-                    <svg class="team-socmedia-icon" width="20" height="20">
+                    <svg
+                      class="socmedia-list__icon--grey"
+                      width="20"
+                      height="20"
+                    >
                       <use
                         href="./images/icons/symbol-defs.svg#icon-linkedin"
                       ></use>
@@ -241,70 +258,86 @@
                 </li>
               </ul>
             </li>
-            <li class="team-section-list-item">
+            <li class="team__item">
               <img
                 src="./images/index/team/img1.jpg"
                 alt="img"
                 width="270"
                 height="260"
               />
-              <h3 class="team-person-name">Ольга Рєпіна</h3>
-              <p class="team-person-position">Frontend Developer</p>
-              <ul class="socmedia-list team-socmedia-list">
-                <li class="socmedia-item">
+              <h3 class="team__name">Ольга Рєпіна</h3>
+              <p class="team__position">Frontend Developer</p>
+              <ul class="socmedia-list team__socmedia-list">
+                <li class="socmedia-list__item">
                   <a
-                    class="socmedia-link"
+                    class="socmedia-list__link"
                     href="/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="instagram"
                   >
-                    <svg class="team-socmedia-icon" width="20" height="20">
+                    <svg
+                      class="socmedia-list__icon--grey"
+                      width="20"
+                      height="20"
+                    >
                       <use
                         href="./images/icons/symbol-defs.svg#icon-instagram"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="socmedia-item">
+                <li class="socmedia-list__item">
                   <a
-                    class="socmedia-link"
+                    class="socmedia-list__link"
                     href="/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="twitter"
                   >
-                    <svg class="team-socmedia-icon" width="20" height="20">
+                    <svg
+                      class="socmedia-list__icon--grey"
+                      width="20"
+                      height="20"
+                    >
                       <use
                         href="./images/icons/symbol-defs.svg#icon-twitter"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="socmedia-item">
+                <li class="socmedia-list__item">
                   <a
-                    class="socmedia-link"
+                    class="socmedia-list__link"
                     href="/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="facebook"
                   >
-                    <svg class="team-socmedia-icon" width="20" height="20">
+                    <svg
+                      class="socmedia-list__icon--grey"
+                      width="20"
+                      height="20"
+                    >
                       <use
                         href="./images/icons/symbol-defs.svg#icon-facebook"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="socmedia-item">
+                <li class="socmedia-list__item">
                   <a
-                    class="socmedia-link"
+                    class="socmedia-list__link"
                     href="/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="linkedin"
                   >
-                    <svg class="team-socmedia-icon" width="20" height="20">
+                    <svg
+                      class="socmedia-list__icon--grey"
+                      width="20"
+                      height="20"
+                    >
                       <use
                         href="./images/icons/symbol-defs.svg#icon-linkedin"
                       ></use>
@@ -313,70 +346,86 @@
                 </li>
               </ul>
             </li>
-            <li class="team-section-list-item">
+            <li class="team__item">
               <img
                 src="./images/index/team/img2.jpg"
                 alt="img"
                 width="270"
                 height="260"
               />
-              <h3 class="team-person-name">Микола Тарасов</h3>
-              <p class="team-person-position">Marketing</p>
-              <ul class="socmedia-list team-socmedia-list">
-                <li class="socmedia-item">
+              <h3 class="team__name">Микола Тарасов</h3>
+              <p class="team__position">Marketing</p>
+              <ul class="socmedia-list team__socmedia-list">
+                <li class="socmedia-list__item">
                   <a
-                    class="socmedia-link"
+                    class="socmedia-list__link"
                     href="/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="instagram"
                   >
-                    <svg class="team-socmedia-icon" width="20" height="20">
+                    <svg
+                      class="socmedia-list__icon--grey"
+                      width="20"
+                      height="20"
+                    >
                       <use
                         href="./images/icons/symbol-defs.svg#icon-instagram"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="socmedia-item">
+                <li class="socmedia-list__item">
                   <a
-                    class="socmedia-link"
+                    class="socmedia-list__link"
                     href="/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="twitter"
                   >
-                    <svg class="team-socmedia-icon" width="20" height="20">
+                    <svg
+                      class="socmedia-list__icon--grey"
+                      width="20"
+                      height="20"
+                    >
                       <use
                         href="./images/icons/symbol-defs.svg#icon-twitter"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="socmedia-item">
+                <li class="socmedia-list__item">
                   <a
-                    class="socmedia-link"
+                    class="socmedia-list__link"
                     href="/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="facebook"
                   >
-                    <svg class="team-socmedia-icon" width="20" height="20">
+                    <svg
+                      class="socmedia-list__icon--grey"
+                      width="20"
+                      height="20"
+                    >
                       <use
                         href="./images/icons/symbol-defs.svg#icon-facebook"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="socmedia-item">
+                <li class="socmedia-list__item">
                   <a
-                    class="socmedia-link"
+                    class="socmedia-list__link"
                     href="/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="linkedin"
                   >
-                    <svg class="team-socmedia-icon" width="20" height="20">
+                    <svg
+                      class="socmedia-list__icon--grey"
+                      width="20"
+                      height="20"
+                    >
                       <use
                         href="./images/icons/symbol-defs.svg#icon-linkedin"
                       ></use>
@@ -385,70 +434,86 @@
                 </li>
               </ul>
             </li>
-            <li class="team-section-list-item">
+            <li class="team__item">
               <img
                 src="./images/index/team/img3.jpg"
                 alt="img"
                 width="270"
                 height="260"
               />
-              <h3 class="team-person-name">Михайло Єрмаков</h3>
-              <p class="team-person-position">UI Designer</p>
-              <ul class="socmedia-list team-socmedia-list">
-                <li class="socmedia-item">
+              <h3 class="team__name">Михайло Єрмаков</h3>
+              <p class="team__position">UI Designer</p>
+              <ul class="socmedia-list team__socmedia-list">
+                <li class="socmedia-list__item">
                   <a
-                    class="socmedia-link"
+                    class="socmedia-list__link"
                     href="/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="instagram"
                   >
-                    <svg class="team-socmedia-icon" width="20" height="20">
+                    <svg
+                      class="socmedia-list__icon--grey"
+                      width="20"
+                      height="20"
+                    >
                       <use
                         href="./images/icons/symbol-defs.svg#icon-instagram"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="socmedia-item">
+                <li class="socmedia-list__item">
                   <a
-                    class="socmedia-link"
+                    class="socmedia-list__link"
                     href="/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="twitter"
                   >
-                    <svg class="team-socmedia-icon" width="20" height="20">
+                    <svg
+                      class="socmedia-list__icon--grey"
+                      width="20"
+                      height="20"
+                    >
                       <use
                         href="./images/icons/symbol-defs.svg#icon-twitter"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="socmedia-item">
+                <li class="socmedia-list__item">
                   <a
-                    class="socmedia-link"
+                    class="socmedia-list__link"
                     href="/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="facebook"
                   >
-                    <svg class="team-socmedia-icon" width="20" height="20">
+                    <svg
+                      class="socmedia-list__icon--grey"
+                      width="20"
+                      height="20"
+                    >
                       <use
                         href="./images/icons/symbol-defs.svg#icon-facebook"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="socmedia-item">
+                <li class="socmedia-list__item">
                   <a
-                    class="socmedia-link"
+                    class="socmedia-list__link"
                     href="/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="linkedin"
                   >
-                    <svg class="team-socmedia-icon" width="20" height="20">
+                    <svg
+                      class="socmedia-list__icon--grey"
+                      width="20"
+                      height="20"
+                    >
                       <use
                         href="./images/icons/symbol-defs.svg#icon-linkedin"
                       ></use>
@@ -462,47 +527,47 @@
       </section>
       <!-- CLIENTS-SECTION -->
       <section class="section">
-        <div class="container">
+        <div class="container clients">
           <h2 class="h2-title">Постійні клієнти</h2>
-          <ul class="clients-list">
-            <li class="clients-list-item">
-              <a class="clients-link" href="/">
-                <svg class="client-icon" width="106" height="60">
+          <ul class="clients__list">
+            <li class="clients__item">
+              <a class="clients__link" href="/">
+                <svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons/symbol-defs.svg#icon-logo-1"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-list-item">
-              <a class="clients-link" href="/">
-                <svg class="client-icon" width="106" height="60">
+            <li class="clients__item">
+              <a class="clients__link" href="/">
+                <svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons/symbol-defs.svg#icon-logo-2"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-list-item">
-              <a class="clients-link" href="/">
-                <svg class="client-icon" width="106" height="60">
+            <li class="clients__item">
+              <a class="clients__link" href="/">
+                <svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons/symbol-defs.svg#icon-logo-3"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-list-item">
-              <a class="clients-link" href="/">
-                <svg class="client-icon" width="106" height="60">
+            <li class="clients__item">
+              <a class="clients__link" href="/">
+                <svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons/symbol-defs.svg#icon-logo-4"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-list-item">
-              <a class="clients-link" href="/">
-                <svg class="client-icon" width="106" height="60">
+            <li class="clients__item">
+              <a class="clients__link" href="/">
+                <svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons/symbol-defs.svg#icon-logo-5"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-list-item">
-              <a class="clients-link" href="/">
-                <svg class="client-icon" width="106" height="60">
+            <li class="clients__item">
+              <a class="clients__link" href="/">
+                <svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons/symbol-defs.svg#icon-logo-6"></use>
                 </svg>
               </a>
@@ -512,60 +577,60 @@
       </section>
     </main>
     <!-- FOOTER-SECTION -->
-    <footer>
-      <div class="footer">
-        <div class="footer-info">
-          <a class="footer-logo" href="/" lang="en">
-            <span class="logo-blue">Web</span
-            ><span class="logo-white">Studio</span>
+    <footer class="footer__section">
+      <div class="container footer">
+        <div class="footer__info">
+          <a class="logo footer__logo" href="/" lang="en">
+            <span class="logo--blue">Web</span
+            ><span class="logo--white">Studio</span>
           </a>
-          <address class="address-footer" id="contacts">
+          <address class="address" id="contacts">
             <ul>
-              <li class="list-address">м. Київ, пр-т Лесі Українки, 26</li>
-              <li class="footer-list-contacts">
-                <a class="footer-mail" href="mailto:info@example.com"
+              <li class="address__item">м. Київ, пр-т Лесі Українки, 26</li>
+              <li class="contacts__item--rgba">
+                <a class="contacts__link--footer" href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
-              <li class="footer-list-contacts">
-                <a class="footer-tel" href="tel:+380991111111"
+              <li class="contacts__item--rgba">
+                <a class="contacts__link--footer" href="tel:+380991111111"
                   >+38 099 111 11 11</a
                 >
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-socmedia">
-          <h3 class="footer-title">Приєднуйтесь</h3>
+        <div class="footer__socmedia">
+          <h3 class="h3-title footer__h3-title">Приєднуйтесь</h3>
           <ul class="socmedia-list">
-            <li class="socmedia-item">
-              <a class="socmedia-link" href="/" aria-label="instagram">
-                <svg class="socmedia-icon" width="20" height="20">
+            <li class="socmedia-list__icon">
+              <a class="socmedia-list__link" href="/" aria-label="instagram">
+                <svg class="socmedia-list__icon--white" width="20" height="20">
                   <use
                     href="./images/icons/symbol-defs.svg#icon-instagram"
                   ></use>
                 </svg>
               </a>
             </li>
-            <li class="socmedia-item">
-              <a class="socmedia-link" href="/" aria-label="twitter">
-                <svg class="socmedia-icon" width="20" height="20">
+            <li class="socmedia-list__icon">
+              <a class="socmedia-list__link" href="/" aria-label="twitter">
+                <svg class="socmedia-list__icon--white" width="20" height="20">
                   <use href="./images/icons/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="socmedia-item">
-              <a class="socmedia-link" href="/" aria-label="facebook">
-                <svg class="socmedia-icon" width="20" height="20">
+            <li class="socmedia-list__icon">
+              <a class="socmedia-list__link" href="/" aria-label="facebook">
+                <svg class="socmedia-list__icon--white" width="20" height="20">
                   <use
                     href="./images/icons/symbol-defs.svg#icon-facebook"
                   ></use>
                 </svg>
               </a>
             </li>
-            <li class="socmedia-item">
-              <a class="socmedia-link" href="/" aria-label="linkedin">
-                <svg class="socmedia-icon" width="20" height="20">
+            <li class="socmedia-list__icon">
+              <a class="socmedia-list__link" href="/" aria-label="linkedin">
+                <svg class="socmedia-list__icon--white" width="20" height="20">
                   <use
                     href="./images/icons/symbol-defs.svg#icon-linkedin"
                   ></use>
@@ -576,5 +641,76 @@
         </div>
       </div>
     </footer>
+
+    <!-- MODAL -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+          <svg width="18" height="18">
+            <use href="./images/icons/symbol-defs.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+        <!-- FORM -->
+        <form name="registration" autocomplete="off">
+          <strong class="form__title">
+            Залиште свої дані, ми вам передзвонимо
+          </strong>
+          <div class="form__container" role="group">
+            <label for="name" class="form__label">
+              <span class="form__text">Ім'я</span>
+              <input type="text" name="name" id="name" class="form__input" />
+              <svg class="form__icon" width="18" height="18">
+                <use href="./images/icons/symbol-defs.svg#icon-person"></use>
+              </svg>
+            </label>
+            <label for="tel" class="form__label">
+              <span class="form__text">Телефон</span>
+              <input type="tel" name="tel" id="tel" class="form__input" />
+              <svg class="form__icon" width="18" height="18">
+                <use href="./images/icons/symbol-defs.svg#icon-phone"></use>
+              </svg>
+            </label>
+            <label for="email" class="form__label">
+              <span class="form__text" name="email">Пошта</span>
+              <input type="email" name="email" id="email" class="form__input" />
+              <svg class="form__icon" width="18" height="18">
+                <use href="./images/icons/symbol-defs.svg#icon-email"></use>
+              </svg>
+            </label>
+            <span class="form__text">Коментар</span>
+            <label class="form__label">
+              <textarea
+                class="form__textarea"
+                placeholder="Введіть текст"
+              ></textarea>
+            </label>
+          </div>
+          <label for="license" class="license">
+            <input
+              type="checkbox"
+              name="license"
+              id="license"
+              class="license__input visually-hidden"
+            />
+            <svg class="license__icon" width="16" height="15">
+              <use
+                class="license__icon-check"
+                href="./images/icons/symbol-defs.svg#icon-check"
+              ></use>
+              <use
+                class="license__icon-empty"
+                href="./images/icons/symbol-defs.svg#icon-empty"
+              ></use>
+            </svg>
+            <span class="license__text"
+              >Погоджуюся з розсилкою та приймаю&nbsp;
+              <a class="license__link" href="/">Умови договору</a>
+            </span>
+          </label>
+          <button class="button main-btn" type="submit">Відправити</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
