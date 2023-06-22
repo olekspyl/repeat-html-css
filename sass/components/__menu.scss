@@ -1,0 +1,31 @@
+.menu {
+    
+    &__list-media {
+        display: flex;
+        flex-wrap: wrap;
+        color: getColor('brand-color-blue');
+        font-size: 18px;
+        line-height: 1.22;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        gap: 10px;
+
+        @media (min-width:$tablet) {
+                display: none;
+            }
+
+    } 
+
+    
+}
+
+.menu__item-media:not(:last-child) .menu__link-media {
+    display: flex;
+    &::after {
+        content: "";
+        display: block;
+        width: 1px;
+        margin-left: 10px;
+        background-color: rgba(33, 33, 33, 0.2);
+    }
+}

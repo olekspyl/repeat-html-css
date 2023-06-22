@@ -20,6 +20,19 @@
     height: 50px;
 }
 
+.footer-btn {
+    margin: 0;
+    display: inline-block;
+    
+    &__flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+    }
+    
+}
+
 .portfolio-btn {
     @extend %button;
     background-color: getColor('background-color-grey');
@@ -41,4 +54,45 @@
 .active-btn {
     color: getColor('text-color-white');
     background-color: getColor('brand-color-blue');
+}
+
+.burger-btn {
+    border: transparent;
+    background-color: getColor('background-color-light');
+    display: block;
+    z-index: 1000;
+    top: 10px;
+    right: 10px;
+    position: absolute;
+
+    &__icon {
+        fill: getColor('text-color-black');
+        transition: getTransition('fill-transition');
+    };
+
+    @media (min-width:$tablet) {
+        display: none;
+    };
+}
+
+
+
+.burger-btn .burger-btn__icon-close {
+    display: none;
+}
+
+.burger-btn.burger-btn.is-open .burger-btn__icon-menu {
+    display: none;
+}
+
+.burger-btn.is-open .burger-btn__icon-close {
+    display: block;
+}
+
+.burger-btn:hover .burger-btn__icon-menu {
+    fill: getColor('brand-color-blue');
+}
+
+.burger-btn:focus .burger-btn__icon-close {
+    fill: getColor('brand-color-blue');
 }

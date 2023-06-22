@@ -7,10 +7,7 @@
     &__container {
         @extend %container;
         display: flex;
-    };
-
-    &__socmedia {
-        margin-left: 94px;
+        gap: 94px;
     };
 
     &__h3-title {

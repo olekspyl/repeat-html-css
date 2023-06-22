@@ -1,28 +1,68 @@
 .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, .4), rgba(47, 48, 58, .4)), url(../images/index/hero.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, .4), rgba(47, 48, 58, .4));
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-color: getColor('background-color-black');
-    max-width: 1600px;
     margin: 0 auto;
-    margin-top: 83px;
+    width: 100%;
+    max-width: 1600px;
+
+    @media (min-width:$mobile) {
+            min-width: $mobile;
+            background-image: url(../../images/index/hero_s.jpg);
+        }
+    
+        @media (min-width:$tablet) {
+            min-width: $tablet;
+            background-image: url(../../images/index/hero.jpg);
+        }
+    
+        @media (min-width:$desktop) {
+            min-width: $desktop;
+        }
 
     &__container {
-        padding: 200px 0;
+        padding: 152px 0 118px 0;
+        margin: 0 auto;
+
+        @media (min-width:$mobile) {
+                width: $mobile;
+            }
+        
+        @media (min-width:$tablet) {
+            width: $tablet;
+        }
+    
+        @media (min-width:$desktop) {
+            width: $desktop;
+            padding: 200px 0;
+        }
+       
     };
 
     &__title {
         color: getColor('text-color-white');
         font-weight: 900;
-        font-size: 44px;
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-        line-height: 1.36;
-        width: 696px;
-        height: 120px;
-        margin: 0 auto 30px auto;
+        font-size: 26px;
+        line-height: 1.62;
+        width: 360px;
         animation: fade-in 2000ms ease 100ms 1 both;
+        margin: 0 auto 30px auto;
+
+        // @media (min-width:$table) {
+        
+        // }
+
+        @media (min-width:$desktop) {
+            font-size: 44px;
+            line-height: 1.36;
+            width: 696px;
+            height: 120px;
+            margin: 0 auto 30px auto;
+        }
     };
 };

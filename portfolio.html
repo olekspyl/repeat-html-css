@@ -14,6 +14,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Portfolio</title>
@@ -309,7 +310,7 @@
             </ul>
           </address>
         </div>
-        <div class="footer__socmedia">
+        <div>
           <h3 class="h3-title footer__h3-title">Приєднуйтесь</h3>
           <ul class="socmedia-list">
             <li class="socmedia-list__icon">
@@ -347,6 +348,27 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="subscription__container">
+          <form class="subscription__form">
+            <h3 class="h3-title footer__h3-title">Підпишіться на розсилку</h3>
+            <label for="subscription" class="subscription__label">
+              <input
+                class="subscription__input"
+                type="email"
+                name="subscription"
+                id="subscription"
+                placeholder="E-mail"
+            /></label>
+            <button class="main-btn footer-btn" type="button">
+              <div class="footer-btn__flex">
+                Підписатися
+                <svg width="24" height="24" class="subscription__icon">
+                  <use href="./images/icons/symbol-defs.svg#icon-send"></use>
+                </svg>
+              </div>
+            </button>
+          </form>
         </div>
       </div>
     </footer>

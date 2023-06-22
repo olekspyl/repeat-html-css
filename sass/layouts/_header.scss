@@ -6,16 +6,34 @@
     background-color: getColor('background-color-light');
     z-index: 1;
     border-bottom: 1px solid #ECECEC;
+   
 
     &__container {
-        @extend %container;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    };
+            @extend %container;
+            display: flex;
+            align-items: center;       
+            position: relative;
+        };
+
+    @media (min-width:$tablet) {
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            }        
+    }
+
+    @media (min-width:$desktop) {
+    &__container {
+    justify-content: start;
+
+    }
+    }
+    
 
     &__nav {
         display: flex;
-        align-items: center;
+        justify-content: space-between;
     };
+
 };

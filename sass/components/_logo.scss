@@ -1,18 +1,32 @@
 %logo-base {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.17;
 }
 
 .logo {
-
     &__header {
         @extend %logo-base;
+        padding: 16px 0;
+        display: block;
+    };
+
+    @media (min-width:$tablet) {
+        &__header {
+            padding: 26px 0;
+        }}
+
+    @media (min-width:$desktop) {
+        &__header {
         padding-top: 24px;
         padding-bottom: 25px;
         margin-right: 93px;
+        font-size: 26px;
+        line-height: 1.19;
     };
+}
+    
 
     &__footer {
         @extend %logo-base;
@@ -31,4 +45,4 @@
     &--white {
         color: getColor('text-color-white');
     };
-};
+}

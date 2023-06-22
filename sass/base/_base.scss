@@ -3,3 +3,7 @@ body {
     background-color: getColor('background-color-light');
     font-family: 'Roboto', sans-serif;
 }
+
+body.modal-open {
+    overflow: hidden;
+}

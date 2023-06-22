@@ -1,5 +1,39 @@
 %container {
-    width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+
+    @media (min-width:$mobile) {
+        width: $mobile;
+    };
+
+    @media (min-width:$tablet) {
+        width:$tablet;
+    };
+
+    @media (min-width:$desktop) {
+        width: $desktop;
+    };
+}
+
+.container__burger {
+    display: none;
+
+    @media (min-width:$tablet) {
+        display: flex;
+        justify-content: space-between;
+    };
+}
+
+.container__burger.is-open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: getColor('background-color-light');
+    display: block;
+    padding: 48px 40px;
+    display: flex;
+    flex-direction: column;
 }
